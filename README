@@ -1,0 +1,193 @@
+=====================================================================================================================
+  Quartz Composer SlideShow Application -- Read Me File
+  Copyright © 2007-2009 by Apple Inc. All Rights Reserved.
+=====================================================================================================================
+
+QUARTZ COMPOSER SLIDESHOW APPLICATION
+
+SlideShow  				                  A slide show application based on the QCRenderer API
+						                        that uses a custom composition or a composition from
+						                        the Composition Repository to render the transitions.
+
+Sample Requirements				          The project was created using the Xcode running under
+						                        Mac OS X 10.6.x or later. The supplied Quartz Composer
+						                        compositions were created using the Quartz Composer
+						                        editor running under Mac OS X 10.6.x or later.
+
+About the sample				            This sample asks the user to choose a directory that
+						                        contains images. All the images that conform to the
+						                        NSImage types will be slide shown in full screen. The
+						                        sample selects a transition composition randomly each
+						                        time the application is run. The transition between
+						                        one image and the next is implemented with a
+						                        QCRenderer containing the transition composition. Any
+						                        files that are not images or the image files do not
+						                        conform to the NSImage types will be ignored.
+
+Using the Sample				            Open the project using the Xcode editor which can be
+						                        found in /Developer/Applications. Build the project
+						                        and run.
+
+Installation					              n/a
+
+Changes from Previous Versions			n/a
+
+Feedback and Bug Reports			      Please send all feedback about this sample to:
+
+						                        - <http://developer.apple.com/contact/feedback.html>
+
+						                        Please submit any bug reports about this example to:
+
+						                        - <http://developer.apple.com/bugreport>
+
+
+=====================================================================================================================
+
+
+Mac OS X: Graphics and Animation
+--------------------------------
+- <https://developer.apple.com/technologies/mac/graphics-and-animation.html>
+
+
+Mac OS X includes an integrated stack of graphics technologies that provide the foundation for building engaging visual experiences. Specialized frameworks — which handle 2D and 3D graphics, animations and image effects — provide everything from graphics primitives to advanced visual environments. Use these rich APIs to give your application amazing graphics capabilities.
+
+CORE ANIMATION
+
+Core Animation lets you build dynamic, animated user experiences using an easy programming model based on compositing independent layers of media. Animations are created by defining key steps along a path, describing how the layers of text, images, video, and OpenGL graphics will interact. The Core Animation framework processes the definitions at runtime, smoothly moving the visual elements from one step to the next — filling in the interim frames of animation automatically. The result is fluid animation seamlessly integrating all the layers of media.
+
+Many of the features in Mac OS X, such as the Dock, Time Machine and QuickTime Player, rely on Core Animation to perform their elegant user interface transitions. Using Core Animation, you too can create cinematic user experiences by smoothly moving interface elements around the screen, fading them in and out, and adding effects with just a few lines of code.
+
+
+CORE IMAGE
+
+Core Image is, simply put, "image effects made easy." It lets you easily create high-performance image processing solutions that automatically take advantage of modern GPU hardware. Core Image uses a floating-point pixel processing pipeline that’s great for working with high bit-depth images, and includes over 100 built-in filter effects, such as color effects, distortions, and transitions. You can even extend Core Image by writing your own custom Image Units to deliver unique functionality.
+
+
+QUARTZ COMPOSER
+
+Quartz Composer is a visual programming environment, included with Xcode, that allows you to quickly create sophisticated motion graphics compositions without having to write code. By simply connecting together building blocks of graphics processing functionality, you can rapidly design dynamic visualizations that, for example, combine images and real-time information over video feeds. After perfecting your composition, you can use Cocoa bindings to embed it into your application. Quartz Composer is also a great way to develop Image Units and OpenCL kernels.
+
+
+QUARTZ
+
+Quartz provides essential graphics services for applications in two integral parts: the Quartz 2D graphics API and the Quartz Extreme windowing environment. Quartz 2D’s rich graphics capabilities are based on the Portable Document Format (PDF) and provides professional-strength 2D graphics features such as Bezier curves, transformations and gradients. Acting as an advanced “visual mixing board,” Quartz Extreme manages an application’s onscreen presentation and delivers responsive, GPU-accelerated window compositing with full support for transparency.
+
+
+OPENGL
+
+OpenGL is the foundation for hardware-accelerated graphics in Mac OS X and accelerates Core Animation, Core Image, and Quartz Extreme. It is also the industry standard graphics API for creating a broad range of 3D applications, including games, animation software and medical imaging solutions. OpenGL in Mac OS X is built on an efficient multithreaded architecture that supports runtime optimizations, resource virtualization, and graphics processors from ATI, Intel, and NVIDIA. Learn more:
+
+    - <https://developer.apple.com/devcenter/mac/resources/opengl/>
+
+
+QUICKTIME
+
+QuickTime and the QTKit framework provide powerful services for manipulating time-based media on Mac OS X, allowing you to add audio and video playback, capture, and encoding capabilities to your application. QuickTime not only delivers stunning video quality at remarkably low data rates using the standards-based H.264 codec, it also supports many other major file formats for audio and video as well. Learn more:
+
+    - <https://developer.apple.com/quicktime/>
+
+
+=====================================================================================================================
+
+
+Quartz Composer Programming Guide - Mac OS X Developer Library
+--------------------------------------------------------------
+URL: <https://developer.apple.com/library/mac/#documentation/GraphicsImaging/Conceptual/QuartzComposer/qc_intro/qc_intro.html>
+
+
+=====================================================================================================================
+
+
+Best Quartz Composer Tutorials -- Sunday, 8 November 2009
+---------------------------------------------------------
+URL: <http://www.thepixelart.com/quartz-composer-tutorials/>
+
+Quartz Composer is a powerful tool for processing and rendering graphical data. You can use it easily for manipulating any type of graphics in real time. It uses node based visual programming language and can be easily adopted by non-programmer due to it simplicity. It uses OpenGL, OpenCL in new Mac OS X, Core Image, Core Video, JavaScript, and other technologies. You can drag and drop, link nodes and play with values to create amazing graphics. Using Quartz Composer you can create Screen Savers, iTunes Visualizers, UI for applications, by conjunction with Cocoa. To use Quartz Composer, install Xcode developer tools from your Mac OS X disc.
+
+In this round-up we present best Quartz Composer tutorials for Developers, Visual Effects Artists, Motion Graphics Designers and VJ`s. And Before you begin with any of these tutorials, please read 'Quartz Composer Programming Guide' at:
+
+- <http://developer.apple.com/mac/library/documentation/GraphicsImaging/Conceptual/QuartzComposer/qc_intro/qc_intro.html>.
+
+
+=====================================================================================================================
+
+
+Basic Tutorial on Images and Directories in Quartz Composer:
+-----------------------------------------------------------
+- <http://www.youtube.com/watch?v=du4kKr2ym14>
+
+
+=====================================================================================================================
+
+
+Creating a Custom Screen Saver with Quartz Composer
+---------------------------------------------------
+URL: <http://www.callinectes.us/?p=32>
+
+Posted by mattia on 07 January 72009; This entry is filed under Developers, Mac OS X, Quartz Composer, Screensavers.
+
+Today’s tip shows you how to create your own custom screen saver that play a Quicktime Movie using with Quartz Composer. To use today’s tip you will want to make sure you have downloaded and installed Xcode from Apple's Developer site. You will also need a QuickTime movie that you want to play as your screen saver.
+
+
+=====================================================================================================================
+
+
+Tutorial: Creating a Quartz Composer Composition
+------------------------------------------------
+URL: <https://developer.apple.com/library/mac/#documentation/graphicsimaging/conceptual/QuartzComposerUserGuide/qc_tutorial/qc_tutorial.html>
+
+Creating a composition with Quartz Composer supplied in Mac OS X v10.5 is easy. You need only to add patches to a workspace and connect them. What’s more, you can get instant feedback on your composition as you add patches, allowing you to tune your composition as you create it.
+
+This chapter is a tutorial that provides step-by-step instructions for creating a glow filter and applying the filter to a rotating cube. After you create the composition, you’ll see how to use it as a screen saver and turn it into a QuickTime movie.
+
+
+=====================================================================================================================
+
+
+Quartz Composer Introduction
+-----------------------------
+URL: <http://www.giantmike.com/articles/quartzcomposer.html>
+
+One of the least well known, yet coolest, programs available for the Mac is Quartz Composer. Part of the Mac OS X Developer Tools (available on the install DVD/CD or from Apple's ADC), and located in '/Developer/Applications/Graphic Tools', this little gem lets you create incredibly cool compositions including slideshows, fun videos, zany screen savers, and even audio visualizations. All this power is harnessed using a mostly drag and drop interface that is fairly easy to learn.
+
+To help you get started, I'm going to describe how to build a slideshow with captions, and a wacky iSight based cube that will almost certainly make you dizzy. After you have completed these tutorials, you should have the tools you need to conceive some extravagant compositions. Let's start with the surprisingly easier iSight Colored Cube....
+
+EXAMPLE 2: SLIDESHOW WITH CAPTIONS
+
+Once again, we want to start out with a blank composition; but we also need a folder full of images. Make sure to save the composition in the folder containing images, and we can get started. The first two things we want to add are a Clear renderer and a Folder Images source. I chose a Clear Color of black, and set the Folder Path of the Folder Images to "./" (without the quotes). Doing that makes sure it grabs images from the folder the composition is currently contained in.
+
+Now that we have a starting point, let's do something with that file list. We can start by adding a Structure Index Member, and two Structure Key Member modifiers. The Structure Index Member locates the file in the list at the specific index (so, if you have 5 images in the folder, index 2 points to the second one). The Structure Key members then get info from the current file. The first key we want is the URL to the image, while the second is the Name of the image.
+
+With the structures in place, we now need to generate indices. The best way is using a stop watch, so that there is a delay between each image. However, it's a bit more complicated than that. After adding a Stop Watch, also add a Math and a Structure Count. Connect the Done Signal of Folder Images to the Start Signal of Stop Watch so it starts counting when the folder has been fully read. Connect the File List of the Folder Images to the Structure of Structure Count. Finally, connect Time from the Stop Watch to the Initial Value of Math. Also in Math, set Operation #1 to divide, and the Operand #1 to how many seconds of delay you want (I used 2).
+
+This doesn't quite get us to the index value we need. For this, we need two more objects: another Math and a Round. In the new Math, set the Initial value to the result from the first Math. Set the Operation #1 to Modulo, and Operand #1 to the Count from Structure Count. The reason for this Modulo is so we can increment from 1 to the number of images in the folder, then repeat. This provides the image looping. Next, set the result from the new Math to the Value of Round, and set the Structure Index Member's Index to the Floor Value of Round. We are now looping through the images!
+
+Ok, so we are looping through images, but we still can't see them, now what? Here is where the real power of Quartz Composer comes into play. See that Create Macro button in the toolbar? Make sure nothing is selected and click it. A new empty patch is created. I called mine Display patch, but you can call it whatever you want.
+
+Double-click the new patch and you will be brought to a blank canvas; this is where we will add the ability to display both the images and their names as captions. Let's begin this patch by adding a Image Downloader and a Billboard to display it. The easy part here is connecting the Image from the Image Downloader to the Billboard's Image. The tricky part is right clicking on Image URL in the Downloader, choosing Published Inputs, and then choosing Image URL. Hit return and forget about it for now (other than noticing that the little dot turned grey).
+
+Unfortunately, this will scale down the pictures to about the size of a stamp. To rectify this, we need a Rendering Destination Dimensions object. This object dynamically calculates the size of the movie window. Connect the Width from this new object to the Width of the Billboard, and the images will be sized to fill the window.
+
+Since we also want the caption to show, we should add an Image With String and another Billboard. For the String property, we need to get it from an external source, so right click, choose Published Inputs, and select String. We can now make a few more connections. Connect the Width of Rendering Destination Dimensions to the Image Width input of Image With String. Then connect the output Display Width of that same object to the new Billboard. Don't make any more connections now, but I suggest changing the Color and Blending of the new Billboard. I choose a yellow color with 70% opacity, and set Blending to Over (so no background is shown).
+
+With yellow text, sometimes it can get hard to read on bright images, so let's add a NI Drop Shadow. Connect the Image output of the Image With String the the Drop Shadow's Image input, and the the Image output from the Drop Shadow to the Image of the second Billboard. I then picked the following values for the drop shadow: Offset X=3, Offset Y=-3, Shadow Radius=2.
+
+In its current state, the caption will be shown right in the middle of the picture. This is not ideal as I want it on the bottom. Let's add two Math objects to get this right. Notice that we don't really deal with pixels in Quartz Composer, but rather Units which are based off the size of the original "preview." Thus, when the viewer window is double sized, the height is now 2 (instead of twice the pixels). The origin is in the middle of the viewer, so to get to the bottom, we need half the height. connect the Height from Rendering Destination Dimensions to the Initial Value of the first Math. Set the Operation #1 to Divide, and set Operand #1 to 2. In the second Math, set the Initial Value to zero (we want a negative number) and Operation #1 to Subtract. Connect the result of the first Math to Operand #1 of the second Math. Set Operation #2 to Add. Now connect the Display Height from Image With String to Operand #2 of the second Math. Finally, connect the result of the second Math to the Y Position of the second Billboard.
+
+The last step is back in the main editor. To get back there, click the Edit Parent button in the toolbar. You should now see our custom patch has three inputs: Enable, Image URL, and String. All we have to do here is connect the Member from the first Structure Key Member to Image URL and the Member from the second Structure Key Member to String.
+
+A couple things to note about this composition. First, if you export to a movie, it doesn't seem to bring in images from the folder. I'm not sure why, but if you want it to work outside of Quartz Composer, you will have to create a Cocoa application to handle it. That is way beyond the scope of this tutorial, but maybe something to keep an eye out for in the future. The other thing to notice is the caption changes slightly before the image loads. This is because it's much easier to render text than a scaled image. To remedy this, you would have to use the Done Signal from the Image Downloader with some logic that I didn't want to get into here.
+
+Of course, feel free to expand on this example as you wish. A good starting point would be to add transitions between images or proper captions using titles in the meta-data for the files. I'll leave these as exercises to the readers. With the tools and experience you have gained here, I'm sure you will have no problems coming up with some great new compositions.
+
+Download: 'Slideshow With Caption.qtz' (3 KB)
+
+
+=====================================================================================================================
+
+  LAST UPDATE: Saturday, 14 April 2012
+
+=====================================================================================================================
+
+
+
